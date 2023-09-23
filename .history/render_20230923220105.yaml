@@ -7,4 +7,4 @@ services:
     env:
       - key: NODE_ENV
         value: production
-  nodeVersion: 16.13.1
+  nodeVersion: 14
