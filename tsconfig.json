@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@*": ["./*"],
+      "@components/*": ["./components/*"],
+      "@app/*": ["./app/*"],
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "pages/businessrelation.jsx",
+    "pages/events.jsx",
+    "pages/howitworks.jsx",
+    "pages/podcast.jsx",
+    "pages/news.jsx",
+    "pages/contacts.jsx",
+    "pages/faqs.jsx",
+    "pages/404.tsx",
+    "pages/privacypolicy.jsx",
+    "pages/termsandcondition.jsxs",
+    "components/Navbar.tsx",
+    "app/lib/mongodb.js"
+  ],
+  "exclude": ["node_modules"]
+}

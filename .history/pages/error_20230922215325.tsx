@@ -1,0 +1,29 @@
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import styles from "../styles/styles.module.css";
+
+const Error:React.FC = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    setTimeout(() => {
+      router.push("/");
+    }, 1000);
+  }, [router]);
+
+  return (
+    <div className={styles.wrapper}>
+      <main className="text-center">
+        <title>Error</title>
+      </main>
+      <div>
+      <h1 className="text-center text-3xl">404</h1>
+        <h2>There was a problem</h2>
+        <p>We could not fint the page </p>
+      </div>
+    </div>
+  );
+};
+
+export default Error;
+

@@ -1,0 +1,65 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@*": ["./*"]
+      "@components/*": ["components/*"],
+      "@app/*": ["app/*"]
+    }
+    This example assumes that you want to use @components and @app as aliases for import paths. You can customize these aliases as needed for your project's structure.
+    
+    After making this change, you should update your import statements in your code to use the defined aliases. For example:
+    
+    javascript
+    Copy code
+    // Before
+    import Navbar from "../../components/Navbar";
+    
+    // After
+    import Navbar from "@components/Navbar";
+    Make sure to update the import paths in your code accordingly to match the aliases you defined in the tsconfig.json file.
+    
+    
+    
+    
+    
+    
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "pages/businessrelation.jsx",
+    "pages/events.jsx",
+    "pages/howitworks.jsx",
+    "pages/podcast.jsx",
+    "pages/news.jsx",
+    "pages/contacts.jsx",
+    "pages/faqs.jsx",
+    "pages/404.tsx",
+    "pages/privacypolicy.jsx",
+    "pages/termsandcondition.jsxs",
+    "components/Navbar.tsx",
+    "app/lib/mongodb.js"
+  ],
+  "exclude": ["node_modules"]
+}
