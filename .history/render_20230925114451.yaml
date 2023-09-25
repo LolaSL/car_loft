@@ -7,5 +7,5 @@ services:
     env:
       - key: NODE_ENV
         value: production
-      - key: NODE_VERSION
+  - key: NODE_VERSION
         value: 16
